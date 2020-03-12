@@ -14,3 +14,9 @@ c.lineTo(100,500);
 c.lineTo(600,450);
 c.strokestyle = "#ffaa00";
 c.stroke();
+
+
+//kreis
+c.beginPath();
+c.ark(30,30,400,0,2*PI,false);
+c.stroke();
