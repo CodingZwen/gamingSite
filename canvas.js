@@ -20,3 +20,14 @@ c.stroke();
 c.beginPath();
 c.ark(30,30,400,0,2*PI,false);
 c.stroke();
+
+
+
+function animate()
+{
+  requestAnimationFrame(animate);
+  console.log("ich male");
+}
+
+
+animate();
