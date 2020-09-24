@@ -1,26 +1,53 @@
 <!DOCTYPE html>
-<html lang="de">
+<html>
+
 <head>
-<meta charset="utf-8">
-<title></title>
-<style>
-
-canvas{
-    border: 1px solid #000000;
-}
-
-body {
-    margin : 0px;
-}
-
-</style>
+<meta charset="utf-8" name="viewport">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="scripts.js"></script>
+<title>Svens Seite</title>
 </head>
+
+
 <body>
-<canvas>
 
-</canvas>    
-<script src="canvas.js"></script>
+    <h1 id="headline">Erste ueberschrift</h1>
 
+<div id="div1">
+
+<ul>
+<li onclick="slide()" >vorwärts</li>
+<li onclick="slideback()">zurück</li>
+<li onclick="getSick()">Krank werden</li>
+<li onclick="changesomething()" class="welt">welt</li>
+<li onclick="cls()" id="hi">cls</li>
+<li onclick ="changeElement(this)">ich bin wiederstandsfaehig</li>
+<li onclick ="bekommeEventhoerer(this)" id="willevent">Ich bekomme ein Event</li>
+</ul>
+
+</div>
+
+<div style="color:aqua;background-color:blueviolet;width: 100px;margin-left: 50px;" id="slide">
+    halloooo
+</div>
+
+
+    <script type="text/javascript">
+       
+        document.getElementById("hi").innerHTML ="gehackt";
+    
+    </script>
+
+
+
+<script type="text/javascript">
+
+document.getElementById("headline").innerHTML ="Javaskripts ueberschrift";
+
+</script>
 
 </body>
+
+
+
 </html>
