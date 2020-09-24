@@ -118,3 +118,102 @@ function changeElement(element)
 {
     element.innerHTML ="wurde veraendert";
 }
+
+void createel()
+{
+    var c = document.getElementById("loeschen");
+    var elmnt = document.createElement("p");
+    elmnt.innerHTML="hallo ein neues element";
+    c.appendChild(elmnt);
+    document.body.appendChild(elmnt);
+}
+
+function getwindowinfo()
+{
+    var x = window.screen.width;
+    var y = window.screen.height;
+    var colorinfo = window.screen.colorDepth;
+    var name = window.location.hostname;
+    var href = window.location.href ="http://www.google.com";
+
+}
+
+function accessSafeSites()
+{
+    var http = window.location.protocol;
+    if(http == "http")return false;
+
+    return true;
+}
+
+
+function jumpfw()
+{
+    window.history.forward();
+}
+
+function getage()
+{
+    var age  = window.prompt("Geb dein alter ein:","99");
+
+    return age;
+
+}
+
+function savegame()
+{
+    if(navigator.cookieEnabled)
+    {
+        document.cookie="isread=1; expires=Fri, 4 Nov 2020 12:00:00 UTC; path=/";
+        window.alert("spiel gespeichert");
+    }
+}
+
+function getcookie()
+{
+    var cook = document.cookie;
+}
+
+function createPLayer()
+{
+    var player = {
+        name:"player1",
+        health:10,
+        attack:15
+    };
+
+    function pinguin(name,alter,kmh)
+    {
+        this.name=name;
+        this.alter=alter;
+        this.geschw=alter;
+
+        this.gofaster = function(mehrkmh)
+        {
+            this.geschw=this.geschw+mehrkmh;
+        }
+    }
+
+    var franz = new pinguin("sven",1,4);
+
+    pinguin.prototype.slower() = function()
+    {
+        this.geschw-=1;
+    }
+    
+}
+
+
+function holedatum()
+{
+    var x = new Date();
+    var hours = new Date().getHours;
+
+    window.alert(x);
+}
+
+function holegenauesdatum()
+{
+    var x =  new Datum().getTime();//zeit von 1970 in millisekunden
+    var cookieablaufzeit = 7*24*60*60*1000;
+}
